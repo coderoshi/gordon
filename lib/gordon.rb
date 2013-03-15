@@ -18,6 +18,7 @@ module Gordon
     app.routes do
       # Point all URIs at the HomeResource class
       add ['dialog.html'], DialogResource
+      add ['form.html'], FormResource
       add ['*'], HomeResource
     end
 

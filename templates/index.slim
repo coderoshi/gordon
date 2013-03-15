@@ -1,64 +1,14 @@
-doctype html
-/[if lt IE 7]
-  html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"
-/[if IE 7]
-  html class="no-js lt-ie9 lt-ie8" lang="en"
-/[if IE 8]
-  html class="no-js lt-ie9" lang="en"
-/![if gt IE 8]>
-  <!--> <html class="no-js" lang="en"> <!--<![endif]
-head
-  meta charset="utf-8"
-  meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
-  meta content="width=device-width" name="viewport"
-  meta content="project" name='riak'
-  meta content="version" name='1.2.0+'
-  title Gordon
-  link rel="stylesheet" href="stylesheets/application.css"
-  script src="javascripts/vendor.js"
-  script src="javascripts/application.js"
+h1 Flash!
 
-body
-  section.ui-responsive-panel data-role="page"
-    div.ui-bar-b data-role="header" data-theme="a" data-position="fixed"
-      a href="#nav-panel" data-icon="bars" xdata-iconpos="notext" Menu
-      h4.ui-title Fixed header
-      a href="#add-form" data-icon="home" xdata-iconpos="notext" Home
+ul data-role="listview" data-inset="true" data-filter="true"
+  li: a href="form.html" data-transition="slide" Form
+  li: a href="#" Audi
+  li: a href="#" BMW
+  li: a href="#" Cadillac
+  li: a href="#" Ferrari
 
-    .jqm-content data-role="content"
-      a href="dialog.html" data-rel="dialog" data-transition="fade" data-role="button" data-inline="true" data-theme="c" Open dialog
-      / a href="index.html" data-rel="dialog" data-transition="pop" data-role="button" data-inline="true" data-theme="c" onclick="$('#nav-panel').panel('toggle', {});" Open Panel
+div data-role="collapsible" data-theme="b" data-content-theme="d" data-collapsed="false"
+  h4 Heading
+  p I'm the collapsible content with a themed content block set to "d".</p>
 
-      h1 Flash!
-
-      ul data-role="listview" data-inset="true" data-filter="true"
-        li: a href="#" Acura
-        li: a href="#" Audi
-        li: a href="#" BMW
-        li: a href="#" Cadillac
-        li: a href="#" Ferrari
-
-      div data-role="collapsible" data-theme="b" data-content-theme="d" data-collapsed="false"
-        h4 Heading
-        p I'm the collapsible content with a themed content block set to "d".</p>
-      / .ui-grid-a
-      /   .ui-block-a
-      /     .ui-bar.ui-bar-e style="height:60px" Block A
-      /   .ui-block-b
-      /     .ui-bar.ui-bar-e style="height:60px" Block B
-
-    #nav-panel data-role="panel" data-display="reveal" data-position-fixed="true" data-theme="a"
-      / ul.nav-search data-role="listview" data-theme="a"
-      ul.jqu-list data-role="listview" data-theme="a" data-divider-theme="a" data-icon="false"
-        li data-icon="delete": a href="#" data-rel="close" Close menu
-        / li data-role="list-divider": jQuery Mobile Demos
-        li: a href="#panel-fixed-page2" class="ui-btn-active ui-state-persist" Flash!
-        li: a href="#panel-fixed-page2" Accessibility
-
-  section data-role="page"
-    h1 Acura
-
-  section data-role="page"
-    h1 Audi
-
-| </html>
+a href="dialog.html" data-rel="dialog" data-transition="fade" data-role="button" data-inline="true" Open dialog

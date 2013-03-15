@@ -1,0 +1,17 @@
+section#home.ui-responsive-panel data-role="page" data-dom-cache="true" data-content-theme="c"
+  div.ui-bar-b data-role="header" data-theme="a" data-position="fixed"
+    a href="#nav-panel" data-icon="bars" xdata-iconpos="notext" Menu
+    h4.ui-title= title ? title : "Fixed Header"
+    - unless home
+      a href="/index.html" data-icon="home" xdata-iconpos="notext" data-transition="none" Home
+
+  .jqm-content data-role="content"
+    == yield
+
+  #nav-panel data-role="panel" data-display="reveal" data-position-fixed="true" data-theme="a"
+    / ul.nav-search data-role="listview" data-theme="a"
+    ul.jqu-list data-role="listview" data-theme="a" data-divider-theme="a" data-icon="false"
+      li data-icon="delete": a href="#" data-rel="close" Close menu
+      / li data-role="list-divider": jQuery Mobile Demos
+      li: a href="#panel-fixed-page" class="ui-btn-active ui-state-persist" Flash!
+      li: a href="#panel-fixed-page2" Accessibility
